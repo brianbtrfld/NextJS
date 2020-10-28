@@ -9,7 +9,7 @@ export default function AboutMe() {
 
             <h2>
                 <Link href="/">
-                    <a>Back To Home</a>
+                    <a>Return</a>
                 </Link>
             </h2>
         </>
