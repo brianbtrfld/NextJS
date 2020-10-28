@@ -1,9 +1,11 @@
+import styles from '../../styles/Home.module.css'
 import Link from "next/link";
+
 
 export default function AboutMe() {
     return (
         <>
-            <h1>Brian G. Butterfield</h1>
+            <h1 className={styles.main}>Brian G. Butterfield</h1>
 
             <h2>
                 <Link href="/">
