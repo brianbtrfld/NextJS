@@ -4,6 +4,7 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
+    //Version 2020.10.28.100
     <div className={styles.container}>
       <Head>
         <title>Brian G. Butterfield</title>
