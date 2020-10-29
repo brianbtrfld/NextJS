@@ -4,7 +4,6 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    //Version 2020.10.28.101
     <div className={styles.container}>
       <Head>
         <title>Brian G. Butterfield</title>
@@ -13,7 +12,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          <Link href="/about/me">About Brian G. Butterfield</Link>
+          <Link href="/home/about">About Brian G. Butterfield</Link>
         </h1>
 
         <div className={styles.grid}>

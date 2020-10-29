@@ -7,11 +7,12 @@ export default function AboutMe() {
         <>
             <h1 className={styles.title}>Brian G. Butterfield</h1>
 
-            <h2>
+            <h2>Version 2020.10.28.102</h2>
+            <h4>
                 <Link href="/">
                     <a>Return Home</a>
                 </Link>
-            </h2>
+            </h4>
         </>
     )
 }
