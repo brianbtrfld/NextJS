@@ -1,18 +1,9 @@
-import styles from '../../styles/Home.module.css'
-import Link from "next/link";
+import Layout from '../../components/layout';
 
-
-export default function AboutMe() {
+export default function About() {
     return (
-        <>
-            <h1 className={styles.title}>Brian G. Butterfield</h1>
-
-            <h2>Version 2020.10.28.102</h2>
-            <h4>
-                <Link href="/">
-                    <a>Return Home</a>
-                </Link>
-            </h4>
-        </>
+        <Layout>
+            <h3>Version 2020.10.28.102</h3>
+        </Layout>
     )
 }
