@@ -4,6 +4,13 @@ import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 
+// History
+//
+// 20201103 Enabled Heroku auto-deployment from 'develop' via https://briangbutterfield-develop.herokuapp.com/
+// 20201103 Finished pre-rendering and data fetching via https://nextjs.org/learn/basics/data-fetching
+//
+
+
 export default function Home({ allPostsData }) {
   return (
     <Layout home>
