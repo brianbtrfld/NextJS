@@ -3,9 +3,15 @@ import Link from 'next/link'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
+import Date from '../components/date'
 
+// Reference
+// https://github.com/vercel/next-learn-starter
+//
+// ========================================================================================================================
 // History
 //
+// 20201124 Finished dynamic routers via https://nextjs.org/learn/basics/dynamic-routes
 // 20201103 Enabled Heroku auto-deployment from 'develop' via https://briangbutterfield-develop.herokuapp.com/
 // 20201103 Finished pre-rendering and data fetching via https://nextjs.org/learn/basics/data-fetching
 //
@@ -35,11 +41,13 @@ export default function Home({ allPostsData }) {
           {
             allPostsData.map(({ id, date, title }) => (
               <li className={utilStyles.listItem} key={id}>
-                {title}
+                <Link href={`/posts/${id}`}>
+                  <a>{title}</a>
+                </Link>
                 <br />
-                {id}
-                <br />
-                {date}
+                <small className={utilStyles.lightText}>
+                  <Date dateString={date} />
+                </small>
               </li>
             ))
           }
