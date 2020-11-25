@@ -11,6 +11,7 @@ import Date from '../components/date'
 // ========================================================================================================================
 // History
 //
+// 20201125 Finish tutorial via https://nextjs.org/learn/basics/deploying-nextjs-app/finally and deployed
 // 20201124 Finished dynamic routers via https://nextjs.org/learn/basics/dynamic-routes
 // 20201103 Enabled Heroku auto-deployment from 'develop' via https://briangbutterfield-develop.herokuapp.com/
 // 20201103 Finished pre-rendering and data fetching via https://nextjs.org/learn/basics/data-fetching
