@@ -4,6 +4,7 @@ import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 import Date from '../components/date'
+import { GetStaticProps } from 'next'
 
 // Reference
 // https://github.com/vercel/next-learn-starter
@@ -11,6 +12,7 @@ import Date from '../components/date'
 // ========================================================================================================================
 // History
 //
+// 20201204 Converted to TypeScript via https://nextjs.org/learn/excel/typescript/nextjs-types and deployed
 // 20201125 Finish tutorial via https://nextjs.org/learn/basics/deploying-nextjs-app/finally and deployed
 // 20201124 Finished dynamic routers via https://nextjs.org/learn/basics/dynamic-routes
 // 20201103 Enabled Heroku auto-deployment from 'develop' via https://briangbutterfield-develop.herokuapp.com/
@@ -60,7 +62,7 @@ export default function Home({ allPostsData }) {
   )
 }
 
-export async function getStaticProps() {
+export const getStaticProps: GetStaticProps = async () => {
   const allPostsData = getSortedPostsData()
   return {
     props: {
